@@ -12,3 +12,9 @@ diamonds_url = "https://raw.githubusercontent.com/TrainingByPackt/Interactive-Da
 diamonds_df = pd.read_csv(diamonds_url)
 # Since the dataset is available in seaborn, we can alternatively read it in using the following line of code
 diamonds_df = sns.load_dataset('diamonds')
+diamonds_df_specific_cols = pd.read_csv(diamonds_url, usecols=['carat','cut','color','clarity'])
+
+#Yes, we can read files from a URL straight into a pandas DataFrame!
+diamonds_df = pd.read_csv(diamonds_url)
+# Since the dataset is available in seaborn, we can alternatively read it in using the following line of code
+diamonds_df = sns.load_dataset('diamonds')
