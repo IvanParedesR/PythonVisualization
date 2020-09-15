@@ -18,3 +18,11 @@ diamonds_df_specific_cols = pd.read_csv(diamonds_url, usecols=['carat','cut','co
 diamonds_df = pd.read_csv(diamonds_url)
 # Since the dataset is available in seaborn, we can alternatively read it in using the following line of code
 diamonds_df = sns.load_dataset('diamonds')
+
+diamonds_df.head()
+
+diamonds_df.cut.nunique()
+diamonds_df.color.nunique()
+diamonds_df.clarity.nunique()
+
+diamonds_df.shape
